@@ -1,0 +1,31 @@
+# Node.js dependencies
+node_modules/
+
+# VitePress build output
+.vitepress/dist/
+
+# VitePress generated files
+.vitepress/cache/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# npm package lock files (optional, if you prefer to ignore them)
+package-lock.json
+yarn.lock
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Optional: ignore local environment files, like .env files (if sensitive data exists)
+.env
+.env.local
+
+test

@@ -1,0 +1,19 @@
+{
+	"name": "vitepress-lite",
+	"private": true,
+	"type": "module",
+	"author": {
+		"name": "Naihe"
+	},
+	"version": "1.0.0",
+	"description": "the document template",
+	"scripts": {
+		"dev": "vitepress dev",
+		"build": "vitepress build",
+		"preview": "vitepress preview"
+	},
+	"devDependencies": {
+		"@types/node": "^22.9.0",
+		"vitepress": "^1.5.0"
+	}
+}

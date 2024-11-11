@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": ["esnext", "dom"],
+    "allowJs": true,
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "images/*": ["./assets/images/*"]
+    }
+  },
+  "include": ["./**/*", ".vitepress/**/*.ts"],
+  "exclude": ["node_modules", "dist", "test"]
+}
