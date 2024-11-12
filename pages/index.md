@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 'vitepress-lite'
   text: 'the document template'
-  tagline: My great project tagline
+  tagline: You can restructure this page by overwriting the index.md file
   image:
     src: /logo-512x512.svg
     alt: vitepress-lite
