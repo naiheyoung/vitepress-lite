@@ -3,6 +3,7 @@ interface ThemeConfig extends DefaultTheme.Config { }
 
 export default {
   logo: '/logo.svg',
+  // #region nav
   nav: [
     { text: 'Home', link: '/' },
     { text: 'Guide', link: '/guide' },
@@ -15,6 +16,7 @@ export default {
       ]
     },
   ],
+  // #endregion nav
   sidebar: {
     '/guide': [
       {

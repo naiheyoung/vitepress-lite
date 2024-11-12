@@ -27,13 +27,4 @@ export default defineConfig({
     'pages/(.*).md': '(.*).md',
     'pages/:dir/(.*).md': ':dir/(.*).md'
   },
-  vite: {
-    resolve: {
-      alias: {
-        '~/': `${resolve(__dirname, '../')}/`,
-        '@/': `${resolve(__dirname, '../')}/`,
-        'images/': '../assets/images/'
-      }
-    }
-  }
 })

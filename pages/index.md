@@ -6,7 +6,7 @@ hero:
   text: 'the document template'
   tagline: My great project tagline
   image:
-    src: /logo.svg
+    src: /logo-512x512.svg
     alt: vitepress-lite
   actions:
     - theme: brand
