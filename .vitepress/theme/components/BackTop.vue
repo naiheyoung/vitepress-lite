@@ -7,19 +7,22 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import { useScroll, useDebounceFn, useEventListener } from '@vueuse/core'
 
 const backtop = () => {
   document.documentElement.scrollIntoView()
 }
 
-const { arrivedState } = useScroll(document)
-const doSomething = useDebounceFn(() => {
-  if (!arrivedState.top) {
-    document.querySelector('.backToTop')?.classList.remove('opacity-0')
-  } else document.querySelector('.backToTop')?.classList.add('opacity-0')
-}, 250)
-useEventListener(document, 'scroll', () => {
-  doSomething()
+onMounted(() => {
+  const { arrivedState } = useScroll(document)
+  const doSomething = useDebounceFn(() => {
+    if (!arrivedState.top) {
+      document.querySelector('.backToTop')?.classList.remove('opacity-0')
+    } else document.querySelector('.backToTop')?.classList.add('opacity-0')
+  }, 250)
+  useEventListener(document, 'scroll', () => {
+    doSomething()
+  })
 })
 </script>
