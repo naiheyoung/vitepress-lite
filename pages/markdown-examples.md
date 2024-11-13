@@ -108,12 +108,12 @@ console.log(str.value) // [!code focus]
 
 ```md
 <<< @/<code_snippet_file>[#snippetID]{highlightLines}
-<<< @/theme.config.ts#nav{5}
+<<< @/nav.config.ts#nav{5}
 ```
 
 **Output**
 
-<<< @/theme.config.ts#nav{5}
+<<< @/nav.config.ts#nav{5}
 
 > You can use `#region <ID>` and `#endregion <ID>` to mark a reference region.
 

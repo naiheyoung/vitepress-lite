@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import themeConfig from '../theme.config'
-import { resolve } from 'path'
+import UnoCSS from 'unocss/vite'
 
 export default defineConfig({
   title: "vitepress-lite",
@@ -27,4 +27,9 @@ export default defineConfig({
     'pages/(.*).md': '(.*).md',
     'pages/:dir/(.*).md': ':dir/(.*).md'
   },
+  vite: {
+    plugins: [
+      UnoCSS()
+    ]
+  }
 })
