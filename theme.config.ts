@@ -1,54 +1,14 @@
 import { DefaultTheme } from 'vitepress'
 interface ThemeConfig extends DefaultTheme.Config { }
+import nav from './nav.config'
+import sidebar from './sidebar.config'
+import socialLinks from './social.config'
 
 export default {
   logo: '/logo.svg',
-  // #region nav
-  nav: [
-    { text: 'Home', link: '/' },
-    { text: 'Guide', link: '/guide' },
-    {
-      text: 'Other', items: [
-        {
-          text: 'MarkdownExamples',
-          link: '/markdown-examples'
-        }
-      ]
-    },
-  ],
-  // #endregion nav
-  sidebar: {
-    '/guide': [
-      {
-        text: 'Example',
-        items: [
-          {
-            text: 'Item 1',
-          },
-          {
-            text: 'Item 2'
-          }
-        ]
-      }
-    ],
-    'markdown-examples': [
-      {
-        text: 'Other🚀',
-        items: [
-          {
-            text: 'Guide',
-            link: '/guide/'
-          }
-        ]
-      }
-    ]
-  },
-  socialLinks: [
-    {
-      icon: 'github',
-      link: 'https://github.com/naiheyoung/vitepress-lite'
-    }
-  ],
+  nav,
+  sidebar,
+  socialLinks,
   footer: {
     copyright: `
     Copyright &copy; 2024
