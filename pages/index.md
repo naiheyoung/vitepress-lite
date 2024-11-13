@@ -22,6 +22,8 @@ features:
   - icon: 🚀
     title: Fast
     details: Like a fleeting moment.
+    linkText: see...
+    link: /guide
   - icon: 🎯
     title: Accurate
     details: Cut to the chase.
